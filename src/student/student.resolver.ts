@@ -15,7 +15,7 @@ export class StudentResolver {
 
   @Query((returns) => [StudentType])
   students(): Promise<Student[]> {
-    return this.studentService.getStudents();
+    return this.studentService.getAllStudents();
   }
 
   @Mutation((returns) => StudentType)
